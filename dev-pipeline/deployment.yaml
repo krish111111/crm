@@ -21,7 +21,7 @@ spec:
         app: httpd
     spec:
       containers:
-      - image: quay.apps.cluster-wdjmz.wdjmz.sandbox2391.opentlc.com/crm/httpd:v2
+      - image: quay.apps.cluster-wdjmz.wdjmz.sandbox2391.opentlc.com/crm/httpd:v3
         imagePullPolicy: IfNotPresent
         name: httpd
         resources: {}
