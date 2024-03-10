@@ -1,0 +1,18 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: httpd
+  namespace: dev-pipeline
+  labels:
+    app: httpd
+spec:
+  host: httpd-dev-pipeline.apps.cluster-6z629.6z629.sandbox172.opentlc.com
+  to:
+    kind: Service
+    name: httpd
+    weight: 100
+  port:
+    targetPort: 80
+  tls:
+    termination: edge
+  wildcardPolicy: None
