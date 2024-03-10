@@ -2,7 +2,6 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: httpd
-  namespace: dev-pipeline
   labels:
     app: httpd
 spec:
